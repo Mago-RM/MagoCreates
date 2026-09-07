@@ -38,42 +38,177 @@
             other things just for fun.
         </p>
 
+        <button>Say Hi!!</button>
+
       </section>
 
       <section id="about">
         <!--This is About-->
         <h1> /About me </h1>
+        <img src="/images/mago_pic.jpg" alt="Girl with cat on shoulder" width="300" wide="200">
         <p>
             I'm a computer science graduate interested in machine learning, 
             AI, mobile development, and building practical software that solves 
             real problems. I especially enjoy projects where technology can make 
             something easier, more accessible, or simply more useful.
 
-
-            I currently volunteer with Games for Love, where I've worked with a
-             multidisciplinary team to build and improve Unity games. My work 
-             has included implementing gameplay systems, UI features, debugging,
-              testing, documentation, and collaborating with design and art teams.
+            I currently volunteer as a programmer with Games for Love, where I 
+            collaborate with a multidisciplinary team to create and improve fun Unity games.
         
 
-            Outside of coding, I'm usually reading, drawing, drinking coffee, 
-            or hanging out with my two cats. I'm also slowly becoming the kind 
-            of person who thinks putting a cat-chasing-a-laser mode on a 
-            professional portfolio is a reasonable idea.
+            Outside of coding, I'm usually reading, drawing, drinking coffee, hanging out with 
+            my two cats or starting yet another little project because... why not?
         </p>
-      </section>
+      </section> 
 
       <section id="experience">
         <!--This is Experience-->
         <h1> /Experience </h1>
 
-        <p>This is all my experience</p>
+        <div class="experience_container">
+          <!-- Left Side-->
+          <div class="experience_names">
+            <button>Code For Good</button>
+            <button>Games For Love</button>
+            <button>SJSU</button>
+          </div>
+
+          <!--Right Side-->
+          <div class="experience_details">
+            <div class="experience">
+                <h3>Programmer @ Games for Love</h3>
+                <p>February 2026 – Present</p>
+                <p>Contribute to the development and improvement of Unity games 
+                  as part of a multidisciplinary team.
+                </p>  
+                <p>Implement gameplay features and UI systems, debug issues, 
+                  test functionality, and integrate work from design and art teams.</p>
+                <p>Collaborate through GitHub using feature branches, 
+                  pull requests, code reviews, and project documentation.</p>
+            </div>
+
+            <div class="experience">
+                <h3>STEM Career Path Scholar @ Code For Good</h3>
+                <p>August 2026 – Present</p>
+                <p>Details...</p>
+            </div>
+
+            <div class="experience">
+                <h3>B.S. Computer Science @ San José State University</h3>
+                <p>Graduated December 2025</p>
+                <p>Studied computer science with interests in machine learning, 
+                  artificial intelligence, data science, and natural language processing.</p>
+                <p>Built software and machine-learning projects using Python, Java, SQL, and related technologies.</p>
+                <p>Completed ML coursework and projects involving regression, classification, CNNs, RNNs, and LSTMs.</p>
+            </div>
+          </div>
+        </div>
       </section>
+
 
       <section id="projects">
         <h1> /Projects </h1>
-        <!--This is Projects-->
-        <p>this is gonna be the grid with cool images and all </p>
+        <a href="https://github.com/...">All projects ...→</a>
+
+        <!--Caroussel Feature-->
+        <div class="project-carousel">
+
+          <button class="prev-project">←</button>
+
+          <div class="featured-project">
+              <!-- Project Shown Big Here-->
+          </div>
+
+          <button class="next-project">→</button>
+
+        </div>
+
+
+        <!--This is Feature Projects-->
+        <div class="project_container">
+
+                      <!--Seagul-->
+          <div class="project_card" id="seagull">
+
+            <img src="images/seagull.png" alt="Seagull game">
+
+            <h3>Seagull Bagel</h3>
+            <p>Unity • C#</p>
+
+            <p>
+                A fast-paced 2D game about a seagull with one very
+                important mission: catch the bagels.
+            </p>
+
+            <a href="YOUR-GAME-LINK">Play Game</a>
+            <a href="YOUR-GITHUB-LINK">GitHub</a>
+          </div>
+          
+                  <!--Aerial Watch-->
+          <div class="project_card" id="aerialwatch">
+
+            <img src="images/aerial.png" alt="Aerial Watch">
+
+            <h3>Aerial Watch</h3>
+            <p>Python • PyTorch • MobileNetV2 • Computer Vision</p>
+
+            <p>
+                A computer vision project that classifies aerial images based 
+                on whether people are present, using transfer learning with 
+                MobileNetV2 and real-world drone imagery.
+            </p>
+
+            <a href="YOUR-GAME-LINK">Link</a>
+            <a href="YOUR-GITHUB-LINK">GitHub</a>
+          </div>
+
+                  <!--Alarm App-->
+          <div class="project_card" id="alarm">
+
+            <img src="images/alarm.png" alt="Wake Buddy">
+
+            <h3>Wake Buddy App</h3>
+            <p>Android • Java</p>
+
+            <p>
+                An Android alarm app designed to make waking up a 
+                little harder to ignore, combining alarm functionality 
+                with interactive features.
+            </p>
+
+            <a href="YOUR-GAME-LINK">Download App</a>
+            <a href="YOUR-GITHUB-LINK">GitHub</a>
+          </div>
+
+                  <!--Portfolio-->
+          <div class ="project_card" id="website">
+            <img src="images/website.jpg" alt="Website Page">
+
+            <h3>Mago Creates - Personal Website</h3>
+            <p>HTML • CSS • JavaScript</p>
+            <p>The website you're looking at! A portfolio built from scratch to 
+              showcase my software, machine learning, mobile, and game 
+              development projects.</p>
+
+            <a href="MY-WEBSITE-LINK">Website Link</a>
+            <a href="MY-GITHUB-LINK">Github Link</a>
+          </div>
+
+                            <!--Mouse Runner-->
+          <div class ="project_card" id="mouserunner">
+            <img src="images/mouserunner.jpg" alt="Mouse Runner">
+            <h3>Mouse Runner</h3>
+            <p>Unity • C# • Team Project</p>
+            <p>A maze-style Unity game where the player collects cheese 
+              while avoiding a pursuing monster, featuring power-ups, lives, 
+              difficulty settings, and other gameplay systems.</p>
+
+              <a href="MY-WEBSITE-LINK">Website Link</a>
+          </div>
+
+                            <!--ML Cat Dog-->
+        
+        </div>
       </section>
 
       <section id="cv">
