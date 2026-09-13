@@ -204,3 +204,47 @@ hr.gradient-line {
     height: 0.5px;
     background-color: #8e44ad;
 }
+
+/*                              REsume                  */
+.resume-container iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.resume-button {
+    display: flex;
+    justify-content: center;
+}
+
+.pink-button {
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 8px;
+    color: #ccd6f6;
+    font-family: NTR, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: solid;
+
+    background-color: transparent;
+    border: 1px solid #FF00FF;
+    padding: 6px 18px;
+}
+
+.pink-button:hover{
+    transform: translateY(-3px);
+    background-color: #df77df;
+    font-weight: 300;
+}
+
+#download-resume {
+    display: block;
+    margin: 0 auto 16px auto;
+}
+
+/*                              FOOTER  */
+footer p{
+   text-align: center;
+}
