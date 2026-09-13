@@ -1,23 +1,173 @@
-body {
-  background-color: #090617;
-}
-
-header{
-    
-
-}
-
 h1 {
     color: #ccd6f6;
     font-family: NTR, sans-serif;
     font-size: 46px;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 p {
   color: #ccd6f6;
   font-family: NTR, sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 100;
+
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+
+  text-align: left;
+  text-align: left;
+  
 }
+
+body {
+  background-color: #090617;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    color: #ccd6f6;
+    font-family: NTR, sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: #FF00FF;
+    padding: 6px 18px;
+}
+
+button:hover{
+    transform: translateY(-3px);
+    background-color: #df77df;
+    font-weight: 300;
+}
+
+button:hover svg{
+    fill:white;
+}
+
+header{
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav a {
+    color:#ccd6f6;
+    font-family: NTR, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff4fd8;
+    text-decoration:none;
+    transform: translateY(-3px);
+}
+
+nav a:visited{
+    color: #ccd6f6;
+    text-decoration:none;
+}
+
+.home-name{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Modern Gradient Line */
+hr.gradient-line {
+  height: 3px;
+  border: none;
+  background: linear-gradient(to right, transparent, #8e44ad, transparent);
+}
+
+
+                                    /* Icon Container */
+.social-container {
+  display: flex;
+  gap: 15px;
+}
+
+/* Base style for the icon */
+.social-icon {
+  width: 32px;
+  height: 32px;
+  fill: #ccd6f6; /* Default gray color */
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+/* Hover effects targeting specific brands */
+.social-link.github:hover .social-icon{
+  fill: #9d7bff;
+  transform: translateY(-3px);
+}
+
+.social-link.linkedin:hover .social-icon{
+    fill: #5ba8ff;
+    transform: translateY(-3px);
+}
+
+.social-link.email:hover .social-icon{
+    fill: #ff4fd8;
+    transform: translateY(-3px);
+}
+
+
+
+/*.       HOME.      */
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 120px;
+    gap: 20px;
+}
+
+#home > div {
+  flex: 1; /* Automatically forces an exact 50/50 split */
+}
+
+.image-container{
+    align-items:right;
+}
+
+#Mago {
+    color:#FF00FF;
+    font-family: NTR, sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+#cursor{
+    color:#FF00FF;
+    font-family: NTR, sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    animation: theAnimation 1s steps(1) infinite;
+}
+
+/* The animation code for cursor*/
+@keyframes theAnimation {
+    0%, 49% {
+        opacity: 1;
+    }
+
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
 
