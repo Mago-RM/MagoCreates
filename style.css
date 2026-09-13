@@ -1,8 +1,8 @@
 h1 {
     color: #ccd6f6;
     font-family: NTR, sans-serif;
-    font-size: 46px;
-    font-weight: 300;
+    font-size: 48px;
+    font-weight: 3000;
 }
 
 p {
@@ -11,12 +11,11 @@ p {
   font-size: 18px;
   font-weight: 100;
 
-  line-height: 1.6;
-  letter-spacing: 0.5px;
-  word-spacing: 2px;
+  line-height: 1.8;
+  letter-spacing: 0.7px;
+  word-spacing: 3px;
 
-  text-align: left;
-  text-align: left;
+  text-align: justify;
   
 }
 
@@ -147,7 +146,7 @@ hr.gradient-line {
 #Mago {
     color:#FF00FF;
     font-family: NTR, sans-serif;
-    font-size: 46px;
+    font-size: 48px;
     font-weight: 700;
 }
 
@@ -170,4 +169,38 @@ hr.gradient-line {
     }
 }
 
+/*                ABOUT      */
+#about {
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 120px;
+    gap: 20px;
+}
 
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-container p {
+    flex: 1;
+}
+
+.about-photo {
+    flex: 1;
+    align-items: right;
+}
+
+#about h1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#about h1::after {
+    content: "";
+    width: 300px;
+    height: 0.5px;
+    background-color: #8e44ad;
+}
