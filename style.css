@@ -48,6 +48,19 @@ button:hover svg{
     fill:white;
 }
 
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-title::after {
+    content: "";
+    width: 300px;
+    height: 0.5px;
+    background-color: #8e44ad;
+}
+
 header{
     padding-left: 120px;
     padding-right: 120px;
@@ -123,7 +136,6 @@ hr.gradient-line {
 }
 
 
-
 /*.       HOME.      */
 #home {
     display: flex;
@@ -191,25 +203,38 @@ hr.gradient-line {
     flex: 1;
     align-items: right;
 }
-
-#about h1 {
-    display: flex;
-    align-items: center;
+/*                              E X P E R I E N C E                 */
+#experience{
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 120px;
     gap: 20px;
+
 }
 
-#about h1::after {
-    content: "";
-    width: 300px;
-    height: 0.5px;
-    background-color: #8e44ad;
+/*                              P R O J E C T S              */
+#projects {
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 120px;
+    gap: 20px;
+
 }
 
 /*                              REsume                  */
+
+#resume{
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 120px;
+    gap: 20px;
+
+}
 .resume-container iframe {
     width: 100%;
     height: 500px;
     border: none;
+    padding-top: 40px;
 }
 
 .resume-button {
@@ -220,7 +245,6 @@ hr.gradient-line {
 .pink-button {
     align-items: center;
     gap: 8px;
-
     border-radius: 8px;
     color: #ccd6f6;
     font-family: NTR, sans-serif;
@@ -231,6 +255,10 @@ hr.gradient-line {
     background-color: transparent;
     border: 1px solid #FF00FF;
     padding: 6px 18px;
+
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .pink-button:hover{
