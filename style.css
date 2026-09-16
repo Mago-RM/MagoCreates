@@ -40,7 +40,7 @@ button{
 
 button:hover{
     transform: translateY(-3px);
-    background-color: #df77df;
+    color: #df77df;
     font-weight: 300;
 }
 
@@ -209,8 +209,75 @@ hr.gradient-line {
     padding-right: 180px;
     padding-top: 120px;
     gap: 20px;
-
 }
+
+.experience_container {
+    display: flex;
+}
+
+.experience_names {
+    border-right: 1px solid #8e44ad;
+}
+
+.experience_names button{
+    padding-top: 10px;
+    border: none;
+    align-items: center;     /* Centers vertically */
+    height: 100px;  
+    font-size: 12px;
+    width: 150px;
+    text-align: center;
+    border-radius: 0px;
+    font-weight: 60px;
+}
+
+.experience_names button:hover{
+    background-color: #fa67da62;
+    color:#ccd6f6;
+}
+
+.experience_names button.active{
+    color: #FF00FF;
+    font-size: 14px;
+    font-weight: 160px;
+}
+
+
+.experience_details{
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 4px;
+}
+
+.experience_details h3{
+    color:#ccd6f6;
+    font-size: 30px;
+    font-weight: 150px;
+    font-family: NTR, sans-serif;
+    padding-left: 10px;
+}
+
+.experience_details h4{
+    color:#ccd6f6;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: NTR, sans-serif;
+    padding-left: 10px;
+}
+
+.popup {
+    color:#FF00FF;
+    font-size: 30px;
+}
+
+.experience_details p{
+    font-size: 16px;
+    font-weight: 100;
+    padding-left: 35px;
+    text-align: justify;
+}
+
+
 
 /*                              P R O J E C T S              */
 #projects {
