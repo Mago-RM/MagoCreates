@@ -144,7 +144,7 @@ hr.gradient-line {
     padding-left: 180px;
     padding-right: 180px;
     padding-top: 120px;
-    gap: 20px;
+    gap: 30px;
 }
 
 #home > div {
@@ -192,7 +192,7 @@ hr.gradient-line {
 .about-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
 }
 
 .about-container p {
@@ -201,8 +201,47 @@ hr.gradient-line {
 
 .about-photo {
     flex: 1;
-    align-items: right;
+    margin-top: 50px;
 }
+
+.about-photo img {
+    width: 420px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.say-hi-button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 8px;
+
+    border-radius: 8px;
+    border: 1px solid #FF00FF;
+    padding: 6px 18px;
+
+    color: #ccd6f6;
+    font-family: NTR, sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+
+    background-color: transparent;
+}
+
+.say-hi-button:hover {
+    transform: translateY(-3px);
+    color: #df77df;
+    font-weight: 300;
+}
+
+.say-hi-button:hover svg {
+    fill: white;
+}
+
+
 /*                              E X P E R I E N C E                 */
 #experience{
     padding-left: 180px;
