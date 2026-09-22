@@ -13,7 +13,7 @@
       <header>    
             <nav>
                 <!-- Left side -->
-                <a href="#Home" class="home-name">Margarita Rincon</a>  <a href="#home">Home</a>  <a href="#about">About</a>  <a href ="#experience"> Experience</a> 
+                <a href="#home" class="home-name">Margarita Rincon</a>  <a href="#home">Home</a>  <a href="#about">About</a>  <a href ="#experience"> Experience</a> 
                  <a href ="#projects">Projects</a>  <a href="#resume">Resume</a>
             </nav>
 
@@ -65,7 +65,7 @@
       <section id="home">
         <!--This is Home-->
         <div class="image-container">
-          <img src="/images/cat1.jpeg" alt="cat picture" width="200" wide="100">
+          <img src="/images/profile.jpeg" alt="gilr looking over shoulder">
         </div>
 
         <div class ="welcome-container">
@@ -120,7 +120,7 @@
             </p>
           
             <div class="about-photo">
-              <img src="/images/profile.jpeg" alt="Girl looking over shoulder">
+              <img src="/images/kitten.jpg" alt="Girl with mountain background">
             </div>
           </div>
       </section> 
@@ -143,6 +143,7 @@
           <div class="experience_details">
             <div class="experience" id="games">
                 <h3>Programmer @ <span class="popup">Games for Love</span></h3>
+                <h4>Interns International Program</h4>
                 <h4>FEBRUARY 2026 - PRESENT</h4>
                 <p>Contribute to the development and improvement of Unity games 
                   as part of a multidisciplinary team.
@@ -156,7 +157,13 @@
             <div class="experience" id="code">
                 <h3>STEM Career Path Scholar @ <span class="popup">Code For Good</span></h3>
                 <h4>AUGUST 2026 – PRESENT</h4>
-                <p>Details...</p>
+                <p>Participate in Code for Good’s STEM Career Readiness program, focused on building practical, 
+                  AI-augmented technical and career skills.</p>
+
+                <p>Complete hands-on learning in areas including AI prompting, software development 
+                  practices, industry tools, and portfolio development.</p>
+
+                <p>Apply program concepts through projects and career preparation activities.</p>
             </div>
 
             <div class="experience" id="sjsu">
@@ -196,7 +203,9 @@
 
           <div class="featured-project">
 
-              <img src="images/pixel.webp" alt="Seagull Bagel game">
+              <video autoplay muted loop playsinline>
+                  <source src="assets/bagel.mov" type="video/mp4">
+              </video>
 
               <div class="featured-project-info">
                   <h3>Seagull Bagel</h3>
@@ -207,7 +216,14 @@
                       important mission: catch the bagels.
                   </p>
 
-                  <a href="https://github.com/Mago-RM"
+                  <a href="https://magorm.itch.io/seagull"
+                    class="pink-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                      Play Now
+                  </a>
+
+                  <a href="https://github.com/Mago-RM/seagull-bagel"
                   class="social-link github"
                   target="_blank"
                   aria-label="GitHub">
@@ -219,31 +235,39 @@
                     </svg>
 
                   </a>
-              </div>
 
+              </div>
           </div>
             <button class="next-project">→</button>
         </div>
 
 
-        <!--This is Feature Projects-->
+        <!--This is Projects Cards  -->
         <div class="project_container">
 
                       <!--Seagul-->
           <div class="project_card" id="seagull">
 
-            <img src="images/pixel.webp" alt="Seagull game">
+            <video autoplay muted loop playsinline>
+                  <source src="assets/bagel.mov" type="video/mp4">
+            </video>
 
             <h3>Seagull Bagel</h3>
             <h4>Unity • C#</h4>
 
             <p>
-                A fast-paced 2D game about a seagull with one very
-                important mission: catch the bagels.
+                      A fast-paced 2D game about a seagull with one very
+                      important mission: catch the bagels.
             </p>
-            
-            <div class="project-links">
-              <a href="https://github.com/Mago-RM"
+
+            <a href="https://magorm.itch.io/seagull"
+              class="pink-button"
+              target="_blank"
+              rel="noopener noreferrer">   
+              Play Now
+            </a>
+
+            <a href="https://github.com/Mago-RM/seagull-bagel"
                   class="social-link github"
                   target="_blank"
                   aria-label="GitHub">
@@ -253,8 +277,7 @@
                         class="social-icon">
                         <path d="M12 .7C5.7.7.6 5.8.6 12.1c0 5 3.3 9.3 7.8 10.8.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.6 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.5.1-3 0 0 1-.3 3.1 1.2.9-.3 1.9-.4 2.8-.4s1.9.1 2.8.4c2.1-1.4 3.1-1.2 3.1-1.2.6 1.5.2 2.7.1 3 .8.8 1.2 1.8 1.2 3 0 4.4-2.7 5.3-5.3 5.6.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.8C23.4 5.8 18.3.7 12 .7z"/>
                     </svg>
-               </a>
-            </div>
+            </a>
           </div>
           
                   <!--Aerial Watch-->
@@ -266,14 +289,26 @@
             <h4>Python • PyTorch • MobileNetV2 • Computer Vision</h4>
 
             <p>
-                A computer vision project that classifies aerial images based 
-                on whether people are present, using transfer learning with 
-                MobileNetV2 and real-world drone imagery.
+                A team-based computer vision project that classifies aerial 
+                images based on whether people are present, using transfer 
+                learning with MobileNetV2, PyTorch, and real-world drone 
+                imagery.
             </p>
 
             <div class="project-links">
-              <a href="YOUR-GAME-LINK">Play Game</a>
-              <a href="https://github.com/Mago-RM"
+              <a href="https://colab.research.google.com/drive/1HCwAdoiH8_LUFe8WbSkyX8TwJymxsv2B?usp=sharing"
+                class="social-link colab"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Google Colab Notebook">
+
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="social-icon">
+                      <path d="M4.54 9.46 2.19 7.1a6.72 6.72 0 0 0 0 9.79l2.36-2.36a3.38 3.38 0 0 1 0-5.07zm14.92 0a3.38 3.38 0 0 1 0 5.07l2.35 2.36a6.72 6.72 0 0 0 0-9.79l-2.35 2.36zM7.1 2.19 4.74 4.54l2.36 2.35a3.38 3.38 0 0 1 5.07 0l2.36-2.35a6.72 6.72 0 0 0-9.79 0L7.1 2.19zm9.8 19.62 2.36-2.35-2.36-2.36a3.38 3.38 0 0 1-5.07 0l-2.36 2.36a6.72 6.72 0 0 0 9.79 0l-2.36 2.35z"/>
+                  </svg>
+              </a>              
+              <a href="https://github.com/jaz4Aung/CS171_Final-Project_AerialWatch"
                   class="social-link github"
                   target="_blank"
                   aria-label="GitHub">
@@ -287,23 +322,17 @@
             </div>
           </div>
 
-                  <!--Alarm App-->
-          <div class="project_card" id="alarm">
+          <div class ="project_card" id="SpartanBank">
+            <img src="images/spartanbank.png" alt="Spartan Bank">
+            <h3>Spartan Bank</h3>
+            <h4>Java • Vue.js • PostgreSQL • Apache Tomcat • Team Project</h4>
+            <p>A full-stack mock banking application 
+              with user authentication, account management, 
+              balance transfers, mobile check deposits, 
+              and savings accounts.</p>
 
-            <img src="images/alarm.png" alt="Wake Buddy">
-
-            <h3>Wake Buddy App</h3>
-            <h4>Android • Java</h4>
-
-            <p>
-                An Android alarm app designed to make waking up a 
-                little harder to ignore, combining alarm functionality 
-                with interactive features.
-            </p>
-
-            <div class="project-links">
-              <a href="YOUR-GAME-LINK">Play Game</a>
-              <a href="https://github.com/Mago-RM"
+              <div class="project-links">
+              <a href="https://github.com/Mago-RM/SpartanBank"
                   class="social-link github"
                   target="_blank"
                   aria-label="GitHub">
@@ -319,17 +348,46 @@
 
                   <!--Portfolio-->
           <div class ="project_card" id="website">
-            <img src="images/website.jpg" alt="Website Page">
+            <img src="images/website.png" alt="Website Page">
 
-            <h3>Mago Creates - Personal Website</h3>
+            <h3>Personal Website</h3>
             <h4>HTML • CSS • JavaScript</h4>
             <p>The website you're looking at! A portfolio built from scratch to 
               showcase my software, machine learning, mobile, and game 
               development projects.</p>
 
             <div class="project-links">
-              <a href="YOUR-GAME-LINK">Play Game</a>
-              <a href="https://github.com/Mago-RM"
+              <a href="https://github.com/Mago-RM/MagoCreates"
+                  class="social-link github"
+                  target="_blank"
+                  aria-label="GitHub">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        class="social-icon">
+                        <path d="M12 .7C5.7.7.6 5.8.6 12.1c0 5 3.3 9.3 7.8 10.8.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.6 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.5.1-3 0 0 1-.3 3.1 1.2.9-.3 1.9-.4 2.8-.4s1.9.1 2.8.4c2.1-1.4 3.1-1.2 3.1-1.2.6 1.5.2 2.7.1 3 .8.8 1.2 1.8 1.2 3 0 4.4-2.7 5.3-5.3 5.6.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.8C23.4 5.8 18.3.7 12 .7z"/>
+                    </svg>
+              </a>
+            </div>
+          </div>
+
+
+                  <!--Alarm App-->
+          <div class="project_card" id="alarm">
+
+            <img src="images/app.png" alt="Wake Buddy">
+
+            <h3>Wake Buddy App</h3>
+            <h4>Android • Java</h4>
+
+            <p>
+                An Android alarm app designed to make waking up a 
+                little harder to ignore, combining alarm functionality 
+                with interactive features.
+            </p>
+
+            <div class="project-links">
+              <a href="https://github.com/Mago-RM/WakeBuddy-Android"
                   class="social-link github"
                   target="_blank"
                   aria-label="GitHub">
@@ -345,7 +403,7 @@
 
                             <!--Mouse Runner-->
           <div class ="project_card" id="mouserunner">
-            <img src="images/mouserunner.jpg" alt="Mouse Runner">
+            <img src="images/mous.png" alt="Mouse Runner">
             <h3>Mouse Runner</h3>
             <h4>Unity • C# • Team Project</h4>
             <p>A maze-style Unity game where the player collects cheese 
@@ -353,7 +411,7 @@
               difficulty settings, and other gameplay systems.</p>
 
               <div class="project-links">
-              <a href="YOUR-GAME-LINK">Play Game</a>
+              <!--  <a href="YOUR-GAME-LINK" class="demo-link">Watch Demo</a> -->.  
               <a href="https://github.com/Mago-RM"
                   class="social-link github"
                   target="_blank"
@@ -377,18 +435,29 @@
         <!--This is Resume-->
         <h1 class="section-title">/ resume</h1>
 
-             <a href="assets/Resume_MargaritaRincon.pdf"
-                download="MargaritaRincon_Resume.pdf"
-                class="pink-button">
-                  Download Resume
-              </a>
+        <div class="resume-content">
+          <p>
+              Interested in learning more about my experience?<br>
+              Download my resume below.
+          </p>
 
+          <a href="assets/Resume_MargaritaRincon.pdf"
+              download="MargaritaRincon_Resume.pdf"
+              class="pink-button"> 
+              Download Resume
+        </a>
+        </div>
+      
+
+       <!-- PDF Embedded Out for now
             <div class="resume-container">
                 <iframe
                     src="assets/Resume_MargaritaRincon.pdf"
                     title="Margarita Rincon Resume">
                 </iframe>
-            </div>           
+            </div>   
+        -->
+
       </section>
 
       
