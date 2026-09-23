@@ -646,6 +646,10 @@ footer p{
         width: 100%;
     }
 
+    body {
+        border: 10px solid red;
+    }
+
     .section-title::after {
         display: none;
     }
