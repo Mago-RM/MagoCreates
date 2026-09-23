@@ -77,3 +77,13 @@ prevButton.addEventListener("click", function () {
 
     featuredProject.innerHTML = projectCards[currentProject].innerHTML;
 });
+
+
+/*.                              M O B I L E        */
+
+const menuButton = document.querySelector(".menu-button");
+const header = document.querySelector("header");
+
+menuButton.addEventListener("click", function () {
+    header.classList.toggle("menu-open");
+});

@@ -68,13 +68,19 @@ header{
     justify-content: space-between;
 }
 
-nav {
+.menu-button {
+    display: none;
+}
+
+nav,
+.home-name {
     display: flex;
     gap: 15px;
     align-items: center;
 }
 
-nav a {
+nav a,
+.home-name {
     color:#ccd6f6;
     font-family: NTR, sans-serif;
     font-size: 16px;
@@ -82,7 +88,8 @@ nav a {
     text-decoration: none;
 }
 
-nav a:visited{
+nav a:visited,
+.home-name a:visited{
     color: #ccd6f6;
     text-decoration:none;
 }
@@ -620,4 +627,168 @@ footer p{
    text-align: center;
    font-size: xx-small;
    font-weight: lighter;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+    .section-title::after {
+        display: none;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .project_container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .home-name {
+        display: block;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    header nav,
+    header .social-container {
+        display: none;
+    }
+
+    header.menu-open nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    header.menu-open .social-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    /*.     HOME    */
+    #home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container img {
+        width: 70%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .welcome-container {
+        width: 90%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .welcome-container .say-hi-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        /*.     A B O U T    */
+    .about-photo {
+        display: none;
+    }
+
+    .about-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-container p {
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+            /*.     E X P E R I E N C E   */
+
+    .experience_container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .experience_names {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between
+    }
+
+    .experience_details {
+        width: 100%;
+    }
+
+    #experience {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+            /*.     P R O J E C T S     */
+
+    #projects {
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .project-carousel {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .featured-project {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .featured-project img,
+    .featured-project video {
+        max-width: 100%;
+        height: auto;
+    }
+        
+    .project_container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        width: 100%;
+    }
+
+    #projects {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
